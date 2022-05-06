@@ -1,0 +1,165 @@
+
+body{
+  /*this is the amazing part where mixing colorss of our background takes place*/
+    background-image: linear-gradient( -180deg,hsl(273, 75%, 66%),hsl(240, 73%, 65%) ) ;
+  background-size:contain;
+  height: 100vh;
+  Font-size: 14px
+}
+.container{
+
+    background:white;
+    width:820px;
+    height:470px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 25px; 
+    margin:0;
+    padding: 0;
+    
+}
+#left{
+  background:url(./images/bg-pattern-desktop.svg)  fixed no-repeat -330px -120px;
+ background-size: 680px;
+
+ background-color: transparent;
+}
+.image{
+  position: absolute;
+left:-40px;
+top:90px;
+height: 315px;
+}
+.mobile,.pattern{
+  display: none;
+}
+#right{
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.box{
+  position:fixed;
+  top:40%;
+  right:90%;
+  width:190px;
+}
+#row1{
+  display: flex;
+
+}
+h1{
+  font-weight: 600;
+  font-size:30px;
+  margin-bottom: 30px;
+  color: hsl(237, 12%, 33%) ;
+}
+.content{
+  text-align: start;
+  margin-top: 15px;
+}
+hr{
+  width: 330px;
+  margin-right: 50px;
+}
+.arrow{
+margin-left: 50px;
+}
+#arrow3{
+  margin-left: 109px;
+}
+#arrow4{
+  margin-left: 107px;
+}
+#arrow5{
+  margin-left:79px ;
+}
+#arrow2{
+  margin-left: 53px;
+}
+.show{
+cursor: pointer;
+}
+.show:hover{
+color:hsl(14, 88%, 65%);
+}
+.hidden{
+  font-size: small;
+}
+/*let me write the code to hide and show content */
+/*this hides the default marker shown on a details tag*/
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .icon:after {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/*let me write the cose for media mobile size of 375px*/
+@media(max-width:375px){
+  body{
+    background-color:linear-gradient(-200deg hsl(273, 75%, 66%),hsl(240, 73%, 65%) );
+    height: 120vh;  }
+ .container{
+    background:white;
+    background-size:contain;
+    width:330px;
+    height:540px;
+    text-align: center;
+    border-radius: 25px; 
+    margin-top: 130px;
+    margin-bottom: 90px;
+    
+}
+.content{
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+}
+.mobile{
+  display:block;
+  width:70%;
+  position: absolute;
+  top:-115px;
+  right:50px;
+}
+.image,.box{
+  display: none;
+}
+.pattern{
+  display: inline;
+  margin-bottom: -25px;
+}
+.hidden{
+  text-align: start;
+}
+hr{
+  width: 290px;
+  margin-right: 50px;
+  margin-left: 15px;
+}
+.arrow{
+  margin-left: 20px;
+  }
+  #arrow3{
+    margin-left: 79px;
+  }
+  #arrow4{
+    margin-left: 77px;
+  }
+  #arrow5{
+    margin-left:49px ;
+  }
+  #arrow2{
+    margin-left: 23px;
+  }
+}
